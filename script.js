@@ -600,7 +600,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		{ photo: 'assets/images/teacher-11.jpg', name: 'Людмила', role: 'Логопед', desc: 'Будущее зависит от того, что вы делаете сегодня!' },
 		{ photo: 'assets/images/teacher-12.jpg', name: 'Виктория', role: 'Нейропсихолог', desc: '' },
 		{ photo: 'assets/images/teacher-8.jpg', name: 'Татьяна', role: 'Русский язык', desc: '«Нет слов плохих вообще, неприемлемых вообще: каждое слово хорошо на своем месте, впору и кстати» — Нора Галь' },
-		{ photo: 'assets/images/teacher-13.jpg', name: 'Алина', role: 'Педагог подготовительной группы', desc: 'Будь то дом, звёзды или пустыня — самое прекрасное в них то, чего не увидишь глазами!' }
+		{ photo: 'assets/images/teacher-13.jpg', name: 'Алина', role: 'Педагог подготовительной группы', desc: 'Будь то дом, звёзды или пустыня — самое прекрасное в них то, чего не увидишь глазами!' },
+		{ photo: 'assets/images/teacher-14.jpg', name: 'Ольга', role: 'Администратор', desc: '' }
 	];
 
 	const DESKTOP_PAGE_SIZE = 4;
