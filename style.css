@@ -394,7 +394,7 @@ body{
 
 @media (max-width:520px){
   .hero-copy{top:96px; left:16px; right:auto; width:fit-content; max-width:calc(100vw - 32px);}
-  .hero-action{bottom:80px;}
+  .hero-action{bottom:120px !important;}
 }
 
 .eyebrow{color:var(--accent);font-weight:700;letter-spacing:0.06em;margin:0 0 8px 0}
