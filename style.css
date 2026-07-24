@@ -386,7 +386,7 @@ body{
   .hero-badge{margin-bottom:24px; font-size:0.9rem;}
   .hero-description,
   .hero-tagline{margin-left:0; margin-right:0; text-align:left;}
-  .hero-action{position:absolute; left:50%!important; right:auto!important; bottom:61px!important; transform:translateX(-50%)!important; z-index:3; gap:12px; width:max-content!important; max-width:calc(100vw - 40px)!important; margin:0!important; align-self:auto;}
+  .hero-action{position:absolute; left:50%!important; right:auto!important; bottom:80px!important; transform:translateX(-50%)!important; z-index:3; gap:12px; width:max-content!important; max-width:calc(100vw - 40px)!important; margin:0!important; align-self:auto;}
   .hero-action .btn,
   .hero-action .hero-cta{width:auto!important; max-width:calc(100vw - 40px)!important; min-width:0!important; box-sizing:border-box; white-space:normal; text-align:center; padding:15px 31px; font-size:1.0625rem;}
   .hero-cta{min-width:180px; font-size:0.95rem;}
