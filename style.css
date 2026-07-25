@@ -183,7 +183,7 @@ body{
 @media (max-width:720px){
   .logo-icon{height:60px; width:auto;}
   .fox{ width:70px; }
-  .fox-hero{ width:80px; }
+  .fox-hero{ width:80px; display:none !important; }
   .fox-ages{ width:70px; bottom:-30px; }
   .fox-faq{ width:70px; top:-20px; left:-16px; }
   .fox-contact{ width:70px; right:-6px; bottom:-10px; }
@@ -1409,20 +1409,21 @@ body{
 .teacher-avatar img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;margin:0;transition:transform var(--trans) ease;border-radius:16px;}
 .teacher-card:hover .teacher-avatar img{transform:scale(1.03);}
 
-/* Individual teacher photo framing controls: edit only object-position values below */
+/* Individual teacher photo framing controls: edit only object-position values below to adjust the framing of each teacher's photo. */
 .teachers-grid > .teacher-card[data-teacher-index="1"] .teacher-avatar > img { object-position: center 55%; }
 .teachers-grid > .teacher-card[data-teacher-index="2"] .teacher-avatar > img { object-position: center 30%; }
 .teachers-grid > .teacher-card[data-teacher-index="3"] .teacher-avatar > img { object-position: center 15%; }
-.teachers-grid > .teacher-card[data-teacher-index="4"] .teacher-avatar > img { object-position: center 0%; }
-.teachers-grid > .teacher-card[data-teacher-index="5"] .teacher-avatar > img { object-position: center 100%; }
-.teachers-grid > .teacher-card[data-teacher-index="6"] .teacher-avatar > img { object-position: center 20%; }
+.teachers-grid > .teacher-card[data-teacher-index="4"] .teacher-avatar > img { object-position: center 60%; }
+.teachers-grid > .teacher-card[data-teacher-index="5"] .teacher-avatar > img { object-position: center 30%; }
+.teachers-grid > .teacher-card[data-teacher-index="6"] .teacher-avatar > img { object-position: center 50%; }
 .teachers-grid > .teacher-card[data-teacher-index="7"] .teacher-avatar > img { object-position: center 50%; }
 .teachers-grid > .teacher-card[data-teacher-index="8"] .teacher-avatar > img { object-position: center -10%; }
 .teachers-grid > .teacher-card[data-teacher-index="9"] .teacher-avatar > img { object-position: center -10%; }
-.teachers-grid > .teacher-card[data-teacher-index="10"] .teacher-avatar > img { object-position: center 60%; }
-.teachers-grid > .teacher-card[data-teacher-index="11"] .teacher-avatar > img { object-position: center 40%; }
-.teachers-grid > .teacher-card[data-teacher-index="12"] .teacher-avatar > img { object-position: center 90%; }
+.teachers-grid > .teacher-card[data-teacher-index="10"] .teacher-avatar > img { object-position: center 20%; }
+.teachers-grid > .teacher-card[data-teacher-index="11"] .teacher-avatar > img { object-position: center 60%; }
+.teachers-grid > .teacher-card[data-teacher-index="12"] .teacher-avatar > img { object-position: center 60%; }
 .teachers-grid > .teacher-card[data-teacher-index="13"] .teacher-avatar > img { object-position: center 10%; }
+.teachers-grid > .teacher-card[data-teacher-index="14"] .teacher-avatar > img { object-position: center -10%; }
 
 @media (hover:hover) and (pointer:fine){
   .teacher-avatar img{cursor:zoom-in;}
@@ -2388,5 +2389,49 @@ body{
     .teacher-desc{
       text-align:center;
     }
+  }
+
+  .benefit-mobile-icon{
+    display:none;
+  }
+
+  @media (max-width:720px){
+    .benefit-card-title-mobile.faq-question{
+      align-items:center;
+      gap:15px;
+    }
+
+    .benefit-card-title-mobile.faq-question .benefit-mobile-title{
+      flex:1;
+      min-width:0;
+      text-wrap:pretty;
+    }
+
+    .benefit-card-title-mobile.faq-question .benefit-mobile-icon{
+      width:52px;
+      height:52px;
+      border-radius:50%;
+      flex-shrink:0;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .benefit-card-title-mobile.faq-question .benefit-mobile-icon svg{
+      width:26px;
+      height:26px;
+      display:block;
+      fill:none;
+      stroke:#2f2a27;
+      stroke-width:1.9;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+    }
+
+    .benefit-card-title-mobile.faq-question .benefit-mobile-icon--book{background:#FFE5CC;}
+    .benefit-card-title-mobile.faq-question .benefit-mobile-icon--person{background:#FFF1B8;}
+    .benefit-card-title-mobile.faq-question .benefit-mobile-icon--idea{background:#DCF5D7;}
+    .benefit-card-title-mobile.faq-question .benefit-mobile-icon--globe{background:#FFDCD6;}
+    .benefit-card-title-mobile.faq-question .benefit-mobile-icon--group{background:#E8DEFF;}
   }
 

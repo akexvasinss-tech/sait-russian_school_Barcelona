@@ -585,23 +585,23 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
-/* Teachers carousel */
+/* Teachers carousel To change the order of cards, you need to put them in order in the teachers array below. */
 document.addEventListener('DOMContentLoaded', () => {
 	const teachers = [
 		{ photo: 'assets/images/teacher-1.jpg', name: 'Катерина', role: 'Директор школы', desc: 'Per aspera ad astra' },
 		{ photo: 'assets/images/teacher-2.jpg', name: 'Алёна', role: 'Руководитель школьного отделения. Преподаватель окружающего мира', desc: 'Каждое большое открытие начинается с маленького «Почему?»' },
 		{ photo: 'assets/images/teacher-3.jpg', name: 'Мария', role: 'Руководитель дошкольного отделения', desc: '' },
-		{ photo: 'assets/images/teacher-4.jpg', name: 'Евгений', role: 'История', desc: '«Рай - это место, где бессонный сосед читает бесконечную книгу при свете вечной свечи» — Владимир Владимирович Набоков' },
-		{ photo: 'assets/images/teacher-5.jpg', name: 'Ирина', role: 'Музыка', desc: 'Когда ты счастлив- ты наслаждаешься музыкой.. когда тебе грустно- ты понимаешь текст песни..' },
-		{ photo: 'assets/images/teacher-6.jpg', name: 'Ксения', role: 'Литература', desc: '«Быть можно дельным человеком и думать о красе ногтей» — Александр Сергеевич Пушкин' },
-		{ photo: 'assets/images/teacher-7.jpg', name: 'Виктория', role: 'География', desc: 'Я не знаю, где встретиться\nНам придется с тобой, –\nГлобус крутится, вертится,\nСловно шар голубой.\nИ мелькают города и страны,\nПараллели и меридианы,\nНо таких еще пунктиров нету,\nПо которым нам бродить по свету' },
-		{ photo: 'assets/images/teacher-9.jpg', name: 'Анна', role: 'Шахматы', desc: 'Дисциплина — ключ к прогрессу в учёбе' },
-		{ photo: 'assets/images/teacher-10.jpg', name: 'Анна', role: 'Творчество', desc: '«Счастье человека где-то между свободой и дисциплиной» — Иван Петрович Павлов' },
-		{ photo: 'assets/images/teacher-11.jpg', name: 'Людмила', role: 'Логопед', desc: 'Будущее зависит от того, что вы делаете сегодня!' },
+		{ photo: 'assets/images/teacher-14.jpg', name: 'Ольга', role: 'Администратор', desc: '' },
 		{ photo: 'assets/images/teacher-12.jpg', name: 'Виктория', role: 'Нейропсихолог', desc: '' },
+		{ photo: 'assets/images/teacher-11.jpg', name: 'Людмила', role: 'Логопед', desc: 'Будущее зависит от того, что вы делаете сегодня!' },
+		{ photo: 'assets/images/teacher-5.jpg', name: 'Ирина', role: 'Музыка', desc: 'Когда ты счастлив- ты наслаждаешься музыкой.. когда тебе грустно- ты понимаешь текст песни..' },
+		{ photo: 'assets/images/teacher-13.jpg', name: 'Алина', role: 'Педагог подготовительной группы', desc: '«Будь то дом, звёзды или пустыня — самое прекрасное в них то, чего не увидишь глазами» — Антуан де Сент-Экзюпери' },
+		{ photo: 'assets/images/teacher-10.jpg', name: 'Анна', role: 'Творчество', desc: '«Счастье человека где-то между свободой и дисциплиной» — Иван Петрович Павлов' },
+		{ photo: 'assets/images/teacher-6.jpg', name: 'Ксения', role: 'Литература', desc: '«Быть можно дельным человеком и думать о красе ногтей» — Александр Сергеевич Пушкин' },
 		{ photo: 'assets/images/teacher-8.jpg', name: 'Татьяна', role: 'Русский язык', desc: '«Нет слов плохих вообще, неприемлемых вообще: каждое слово хорошо на своем месте, впору и кстати» — Нора Галь' },
-		{ photo: 'assets/images/teacher-13.jpg', name: 'Алина', role: 'Педагог подготовительной группы', desc: 'Будь то дом, звёзды или пустыня — самое прекрасное в них то, чего не увидишь глазами!' },
-		{ photo: 'assets/images/teacher-14.jpg', name: 'Ольга', role: 'Администратор', desc: '' }
+		{ photo: 'assets/images/teacher-7.jpg', name: 'Виктория', role: 'География', desc: 'Я не знаю, где встретиться\nНам придется с тобой, –\nГлобус крутится, вертится,\nСловно шар голубой.\nИ мелькают города и страны,\nПараллели и меридианы,\nНо таких еще пунктиров нету,\nПо которым нам бродить по свету' },
+		{ photo: 'assets/images/teacher-4.jpg', name: 'Евгений', role: 'История', desc: '«Рай - это место, где бессонный сосед читает бесконечную книгу при свете вечной свечи» — Владимир Владимирович Набоков' },
+		{ photo: 'assets/images/teacher-9.jpg', name: 'Анна', role: 'Шахматы', desc: 'Дисциплина — ключ к прогрессу в учёбе' },	
 	];
 
 	const DESKTOP_PAGE_SIZE = 4;
