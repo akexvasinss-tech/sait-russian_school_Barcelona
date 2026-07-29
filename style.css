@@ -1424,6 +1424,7 @@ body{
 .teachers-grid > .teacher-card[data-teacher-index="12"] .teacher-avatar > img { object-position: center 60%; }
 .teachers-grid > .teacher-card[data-teacher-index="13"] .teacher-avatar > img { object-position: center 10%; }
 .teachers-grid > .teacher-card[data-teacher-index="14"] .teacher-avatar > img { object-position: center -10%; }
+.teachers-grid > .teacher-card[data-teacher-index="15"] .teacher-avatar > img { object-position: center 10%; }
 
 @media (hover:hover) and (pointer:fine){
   .teacher-avatar img{cursor:zoom-in;}
